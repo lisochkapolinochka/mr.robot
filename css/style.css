@@ -17,7 +17,12 @@ body {
   font-size: 20px;
   font-weight: 300;
 }
-
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
 a {
   color: #F03861;
   -webkit-transition: 0.5s;
@@ -95,8 +100,8 @@ h3 {
   border-color: transparent;
 }
 
-.heading-section {
-  margin-bottom: 5em;
+.heading-section .text-center {
+  margin-bottom: 3em;
 }
 .heading-section h2 {
   position: relative;
@@ -117,16 +122,19 @@ h3 {
 }
 
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
-#fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section,
-#fh5co-work-section {
-  padding-bottom: 5em;
+#fh5co-common-section, #footer, #fh5co-contact-section,
+#fh5co-work-section, {
+  padding-bottom: 0em;
+  margin-bottom: 100px
+}
+header, #fh5co-main-nav {padding-bottom: 30px
 }
 
 header {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 header .fh5co-navbar-brand {
-  padding-bottom: 3em;
+  padding-bottom: 30px;
 }
 header .fh5co-navbar-brand .fh5co-logo {
   position: relative;
@@ -150,7 +158,7 @@ header .fh5co-navbar-brand .fh5co-logo:hover {
 }
 header #fh5co-main-nav > ul {
   padding: 0;
-  margin: 0;
+  margin: 10;
 }
 header #fh5co-main-nav > ul li {
   list-style: none;
@@ -165,6 +173,8 @@ header #fh5co-main-nav > ul li {
     margin-bottom: 15px;
   }
 }
+
+
 header #fh5co-main-nav > ul li a {
   padding-bottom: 5px;
   color: #000;
@@ -192,6 +202,18 @@ header #fh5co-main-nav > ul li:first-child {
   margin-left: 0;
 }
 
+a {text-decoration: none
+}
+
+hr {
+    width: 20px;
+    height: 3px;
+    background: #F03861;
+}
+
+.row {
+  margin: 80px;
+}
 #fh5co-intro-section h2 {
   font-size: 40px;
   line-height: 1.5em;
@@ -205,6 +227,9 @@ header #fh5co-main-nav > ul li:first-child {
 
 .owl-carousel {
   margin-bottom: 5em;
+}
+.owl-carousel3 {padding-left: 10%;
+padding-right: 10%;
 }
 
 /* Owl Override Style */
@@ -368,6 +393,12 @@ header #fh5co-main-nav > ul li:first-child {
 .item {
   position: relative;
 }
+.meta-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .item .pop-up-overlay {
   position: absolute;
   top: 0;
@@ -380,6 +411,7 @@ header #fh5co-main-nav > ul li:first-child {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .item .pop-up-overlay.pop-up-overlay-color-2 {
   background: rgba(248, 125, 9, 0.8) !important;
 }
@@ -402,9 +434,17 @@ header #fh5co-main-nav > ul li:first-child {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 10px;
 }
+.item .pop-up-overlay_2 .desc h3 {
+  color: rgba(219, 75, 99, 1);
+  margin-bottom: 10px;
+}
 .item .pop-up-overlay .desc span {
   display: block;
   color: rgba(255, 255, 255, 0.6);
+}
+.item .pop-up-overlay_2 .desc span {
+  display: block;
+  color: rgba(0, 0, 0, 1);
 }
 .item .pop-up-overlay:hover, .item .pop-up-overlay:focus {
   text-decoration: none;
@@ -413,6 +453,10 @@ header #fh5co-main-nav > ul li:first-child {
   opacity: 1;
 }
 
+
+.item_back {
+  width: 100;
+}
 .services-num {
   position: relative;
 }
@@ -431,7 +475,7 @@ header #fh5co-main-nav > ul li:first-child {
 .services-num .desc h3 {
   font-weight: 300;
   line-height: 26px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .services-num.services-num-text-right {
@@ -658,156 +702,6 @@ header #fh5co-main-nav > ul li:first-child {
   background: #FF7676 !important;
 }
 
-@media screen and (max-width: 992px) {
-  .blog-section {
-    margin-bottom: 80px;
-  }
-}
-.blog-section span {
-  display: block;
-  font-size: 80px;
-  color: #000;
-  line-height: 0;
-  margin-bottom: 60px;
-  font-weight: 700;
-  position: relative;
-}
-.blog-section span small {
-  position: absolute;
-  top: 0;
-  font-size: 16px;
-  color: rgba(114, 114, 114, 0.8);
-  font-weight: 300;
-  line-height: 0;
-  margin-left: 20px;
-}
-.blog-section h3 {
-  margin-bottom: 10px;
-}
-.blog-section h3 a {
-  color: #000;
-}
-
-.fh5co-grid-work {
-  margin-bottom: 60px;
-}
-.fh5co-grid-work .work-holder {
-  position: relative;
-  margin-bottom: 30px;
-}
-.fh5co-grid-work .work-holder img {
-  max-width: 100%;
-}
-.fh5co-grid-work .work-holder .inner-overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(240, 56, 97, 0.9);
-  opacity: 0;
-}
-.fh5co-grid-work .work-holder .inner-overlay i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-  color: #fff;
-  font-size: 30px;
-}
-.fh5co-grid-work .work-holder .inner-overlay.inner-overlay-2 {
-  background: rgba(248, 125, 9, 0.9);
-}
-.fh5co-grid-work .work-holder .inner-overlay.inner-overlay-3 {
-  background: rgba(23, 231, 164, 0.9);
-}
-.fh5co-grid-work .work-holder .inner-overlay.inner-overlay-4 {
-  background: rgba(249, 197, 53, 0.9);
-}
-.fh5co-grid-work .work-holder .inner-overlay.inner-overlay-4 {
-  background: rgba(81, 218, 207, 0.9);
-}
-.fh5co-grid-work .work-holder .inner-overlay.inner-overlay-5 {
-  background: rgba(255, 118, 118, 0.9);
-}
-.fh5co-grid-work .desc h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.fh5co-grid-work .desc h3 a {
-  color: #000;
-}
-.fh5co-grid-work .desc span {
-  color: rgba(114, 114, 114, 0.5);
-  font-size: 16px;
-}
-.fh5co-grid-work:hover .inner-overlay, .fh5co-grid-work:focus .inner-overlay {
-  opacity: 1;
-}
-
-.about {
-  padding-bottom: 5em;
-}
-.about img {
-  margin-bottom: 50px;
-}
-.about .team-section-grid {
-  position: relative;
-  background-size: cover;
-  height: 450px;
-  margin-bottom: 30px;
-}
-.about .team-section-grid .overlay-section {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-.about .team-section-grid .overlay-section h3 {
-  color: #fff;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-.about .team-section-grid .overlay-section p {
-  color: rgba(255, 255, 255, 0.8);
-}
-.about .team-section-grid .overlay-section p.fh5co-social-icons a:hover, .about .team-section-grid .overlay-section p.fh5co-social-icons a:focus {
-  text-decoration: none !important;
-}
-.about .team-section-grid .overlay-section p.fh5co-social-icons i {
-  font-size: 32px;
-}
-.about .team-section-grid .overlay-section span {
-  color: #fff;
-  display: block;
-}
-.about .team-section-grid .overlay-section .desc {
-  position: absolute;
-  bottom: 0;
-  left: 30px;
-  right: 30px;
-}
-.about .team-section-grid:hover .overlay-section {
-  opacity: 1;
-}
-.about .fh5co-social-icons a {
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-.about .fh5co-social-icons a:hover {
-  color: white;
-}
 
 .contact-info {
   margin-bottom: 4em;
@@ -870,11 +764,24 @@ input[type="text"] {
   }
 }
 
-.container-history {
-padding-left: 200px;
-padding-right: 200px;
+
+.container-history_1 {
+padding-left: 5%;
+padding-right: 5%;
 text-align: justify;
 }
+.container-history_2 {
+padding-left: 5%;
+padding-right: 5%;
+text-align: justify;
+}
+.container-history_3 {
+padding-left: 5%;
+padding-right: 5%;
+text-align: justify;
+margin-bottom: 100px;
+}
+
 
 .container_cast ul li {
   list-style: none;
@@ -883,18 +790,66 @@ text-align: justify;
 font-family: "Roboto", Arial, serif;
 text-transform: lowercase;
 width: 27%;
-margin: 2% 4% 40px 2%;
+margin: 2% 4% 30px 2%;
 text-align: center;
-font-size: 20px;
+font-size: 18px;
 }
 
 .container_cast ul li a img {
-
   max-width: 99%;
 }
-h3 {
-  margin: 20px:
+.container_cast {
+  margin-bottom: 40px;
 }
+h3 {
+  margin: 10px:
+}
+
+body_feedback {
+font-family: arial;
+font-size: 16px;
+color: #000000;
+font-family: "Roboto", Arial, serif;
+}
+h1 {
+color: #FF184F;
+text-align: center;
+}
+form {
+width: 500px;
+background: white;
+padding: 20px 25px;
+margin: auto;
+margin-top: 30px;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+form input,
+form textarea {
+font: inherit;
+padding: 5px 5px;
+width: 100%;
+margin-top: 3px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+form textarea.message {
+height: 200px;
+}
+
+form button {
+border: 1px solid rgba(0,0,0,0.2);
+padding: 8px 35px;
+font-size: 12px;
+background: #888;
+color: white;
+}
+form label {
+color: #000000;
+font-size: 14px;
+margin-bottom: 2px;
+display: block;
+}
+
 #footer p {
   font-size: 16px;
 }
