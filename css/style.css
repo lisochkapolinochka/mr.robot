@@ -120,6 +120,66 @@ h3 {
   height: 3px;
   background: #F03861;
 }
+.ratings {
+  font-size: 0;
+}
+
+.rating {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100px;
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.rating-right {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.rating span {
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  right: 170px;
+  top: -25px;
+}
+
+.rating-right span {
+  right: auto;
+  left: 170px;
+}
+
+.row.ratings-row {
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .rating {
+    font-size: 50px;
+    padding-right: 10px;
+  }
+
+  .rating-right {
+    padding-left: 10px;
+  }
+
+  .rating span {
+    right: 85px;
+    top: -15px;
+    font-size: 18px;
+  }
+
+  .rating-right span {
+    right: auto;
+    left: 85px;
+  }
+
+}
 
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
 #fh5co-common-section, #footer, #fh5co-contact-section,
